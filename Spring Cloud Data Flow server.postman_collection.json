@@ -1,0 +1,1199 @@
+{
+	"info": {
+		"_postman_id": "621e774d-3f4b-40a6-8f52-d12b5aac60d3",
+		"name": "Spring Cloud Data Flow server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboard (HTML)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/dashboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "about",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/about",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tools",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tools"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/apps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"apps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "audit-records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/audit-records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"audit-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runtime/streams{?names}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/runtime/streams?names=myStream,anotherStream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"runtime",
+						"streams"
+					],
+					"query": [
+						{
+							"key": "names",
+							"value": "myStream,anotherStream"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runtime/streams/{streamNames}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/runtime/streams/myStream,anotherStream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"runtime",
+						"streams",
+						"myStream,anotherStream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runtime/apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/runtime/apps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"runtime",
+						"apps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runtime/apps/{appId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/runtime/apps/myApp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"runtime",
+						"apps",
+						"myApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runtime/apps/{appId}/instances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/runtime/apps/myApp/instances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"runtime",
+						"apps",
+						"myApp",
+						"instances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "runtime/apps/{appId}/instances/{instanceId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/runtime/apps/sink/instances/myInstance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"runtime",
+						"apps",
+						"sink",
+						"instances",
+						"myInstance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/definitions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/definitions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"definitions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/definitions/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/definitions/myStream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"definitions",
+						"myStream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/validation/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/validation/myStream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"validation",
+						"myStream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/{name}?reuse-deployment-properties=false",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/myDeployment?reuse-deployment-properties=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"myDeployment"
+					],
+					"query": [
+						{
+							"key": "reuse-deployment-properties",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/myDeployment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"myDeployment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/history/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/history/myDeployment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"history",
+						"myDeployment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/manifest/{name}/{version}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/manifest/myDeployment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"manifest",
+						"myDeployment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/platform/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/platform/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"platform",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/rollback/{name}/{version}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/rollback/{name}/{version}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"rollback",
+						"{name}",
+						"{version}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/update/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/update/{name}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"update",
+						"{name}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/{name}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"{name}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/deployments/scale/{streamName}/{appName}/instances/{count}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/deployments/scale/{streamName}/{appName}/instances/{count}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"deployments",
+						"scale",
+						"{streamName}",
+						"{appName}",
+						"instances",
+						"{count}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/logs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"logs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/logs/{streamName}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/logs/{streamName}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"logs",
+						"{streamName}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "streams/logs/{streamName}/{appName}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/streams/logs/{streamName}/{appName}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"streams",
+						"logs",
+						"{streamName}",
+						"{appName}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/platforms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/platforms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"platforms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/definitions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/definitions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"definitions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/definitions/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/definitions/{name}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"definitions",
+						"{name}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/executions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/executions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"executions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/executions{?name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/executions?myExec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"executions"
+					],
+					"query": [
+						{
+							"key": "myExec",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/executions/current",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/executions/current",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"executions",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/executions/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/executions/111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"executions",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/validation/{name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/validation/{name}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"validation",
+						"{name}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/info/executions{?completed,name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/info/executions?completed=true&name=myTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"info",
+						"executions"
+					],
+					"query": [
+						{
+							"key": "completed",
+							"value": "true"
+						},
+						{
+							"key": "name",
+							"value": "myTask"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/logs/{taskExternalExecutionId}{?platformName}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/tasks/logs/123?platformName=platform",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"tasks",
+						"logs",
+						"123"
+					],
+					"query": [
+						{
+							"key": "platformName",
+							"value": "platform"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/executions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/executions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"executions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/executions{?name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/executions?name=myJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"executions"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "myJob"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/executions{?status}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/executions?status=COMPLETED",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"executions"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "COMPLETED"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/executions/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/executions/111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"executions",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/executions/{jobExecutionId}/steps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/executions/123/steps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"executions",
+						"123",
+						"steps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/executions/{jobExecutionId}/steps/{stepId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/executions/123/steps/111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"executions",
+						"123",
+						"steps",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/executions/{jobExecutionId}/steps/{stepId}/progress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/executions/{jobExecutionId}/steps/{stepId}/progress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"executions",
+						"{jobExecutionId}",
+						"steps",
+						"{stepId}",
+						"progress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/instances{?name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/instances?name=myJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"instances"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "myJob"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/instances/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/instances/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"instances",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/thinexecutions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/thinexecutions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"thinexecutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/thinexecutions{?name}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/thinexecutions?name=myExec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"thinexecutions"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "myExec"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/thinexecutions{?jobInstanceId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/thinexecutions?jobInstanceId=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"thinexecutions"
+					],
+					"query": [
+						{
+							"key": "jobInstanceId",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/thinexecutions{?taskExecutionId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/jobs/thinexecutions?taskExecutionId=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"jobs",
+						"thinexecutions"
+					],
+					"query": [
+						{
+							"key": "taskExecutionId",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "completions/stream{?start,detailLevel}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/completions/stream?start=1&detailLevel=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"completions",
+						"stream"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "detailLevel",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "completions/task{?start,detailLevel}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9393/completions/task?start=1&detailLevel=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9393",
+					"path": [
+						"completions",
+						"task"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "detailLevel",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
